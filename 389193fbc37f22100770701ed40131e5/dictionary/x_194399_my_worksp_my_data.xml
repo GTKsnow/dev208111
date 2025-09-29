@@ -2,5 +2,6 @@
     <element db_object_id="4ea8a511c39432100770701ed40131df" label="My Data" max_length="40" name="x_194399_my_worksp_my_data" type="collection">
         <element label="Title" max_length="40" name="title" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="File" max_length="40" name="file" type="file_attachment"/>
     </element>
 </database>
