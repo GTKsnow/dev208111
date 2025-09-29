@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9158adddc35432100770701ed401312d" extends="task" label="My Task" max_length="40" name="x_194399_my_worksp_my_task" type="collection"/>
+</database>
