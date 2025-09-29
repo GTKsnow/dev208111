@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">c04265d5c35432100770701ed40131d0</macroponent>
+        <name>Toggle Logic</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+
+    // if client state parameter is incident 
+    if (api.state.myTable == 'incident') {
+
+        // set client state parameter to 'change_request'
+        api.setState('myTable', 'change_request');
+
+    } else {
+
+        // else set client state parameter to 'incident'
+        api.setState('myTable', 'incident');
+
+    }
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-29 07:45:16</sys_created_on>
+        <sys_id>d8426155c31432100770701ed40131ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Toggle Logic</sys_name>
+        <sys_package display_value="My Workspace" source="x_194399_my_worksp">389193fbc37f22100770701ed40131e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Workspace">389193fbc37f22100770701ed40131e5</sys_scope>
+        <sys_update_name>sys_ux_client_script_d8426155c31432100770701ed40131ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-29 07:45:16</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

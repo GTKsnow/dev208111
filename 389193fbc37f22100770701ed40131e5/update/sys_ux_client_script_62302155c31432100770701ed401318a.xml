@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">92302915c35432100770701ed40131d2</macroponent>
+        <name>Alerts</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    api.emit("NOW_UXF_PAGE#ADD_NOTIFICATIONS", {
+        items: [
+            {
+                id: "alert1",
+                status: "critical",
+                icon: "circle-exclamation-fill",
+                content: {
+                    type: "string",
+                    value: "Critical: System failure detected!"
+                },
+                action: { type: "dismiss" }
+            },
+            {
+                id: "alert2",
+                status: "high",
+                icon: "circle-exclamation-outline",
+                content: {
+                    type: "string",
+                    value: "High: CPU usage exceeded 90%"
+                },
+                action: { type: "dismiss" }
+            },
+            {
+                id: "alert3",
+                status: "moderate",
+                icon: "circle-pause-outline",
+                content: {
+                    type: "string",
+                    value: "Moderate: Disk space is below 20%"
+                },
+                action: { type: "dismiss" }
+            },
+            {
+                id: "alert4",
+                status: "warning",
+                icon: "triangle-exclamation-outline",
+                content: {
+                    type: "string",
+                    value: "Warning: Unusual login activity detected"
+                },
+                action: { type: "dismiss" }
+            },
+            {
+                id: "alert5",
+                status: "info",
+                icon: "circle-question-fill",
+                content: {
+                    type: "string",
+                    value: "Info: A new software update is available"
+                },
+                action: { type: "dismiss" }
+            },
+            {
+                id: "alert6",
+                status: "positive",
+                icon: "check-circle-outline",
+                content: {
+                    type: "string",
+                    value: "Positive: Backup completed successfully"
+                },
+                action: { type: "dismiss" }
+            },
+            {
+                id: "alert7",
+                status: "low",
+                icon: "bell-fill",
+                content: {
+                    type: "string",
+                    value: "Low: Minor update recommended"
+                },
+                action: { type: "dismiss" }
+            }
+        ]
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-29 07:33:34</sys_created_on>
+        <sys_id>62302155c31432100770701ed401318a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Alerts</sys_name>
+        <sys_package display_value="My Workspace" source="x_194399_my_worksp">389193fbc37f22100770701ed40131e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Workspace">389193fbc37f22100770701ed40131e5</sys_scope>
+        <sys_update_name>sys_ux_client_script_62302155c31432100770701ed401318a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-29 07:33:34</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>
