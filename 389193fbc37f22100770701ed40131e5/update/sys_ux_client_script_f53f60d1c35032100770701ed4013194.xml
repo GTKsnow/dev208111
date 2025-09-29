@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">404224ecc39432100770701ed40131f3</macroponent>
+        <name>text_link_1/now_default/href</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  console.log(api);
+  //https://dev208111.service-now.com/x/194399/incident-workspace/incident-record/task/e93a9c7be1fe22108bb2327e625886e0
+	var url = 'now/incident-workspace/incident-record/incident/'+api.item.value._row_data.value;
+  return url;
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-29 04:00:42</sys_created_on>
+        <sys_id>f53f60d1c35032100770701ed4013194</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>text_link_1/now_default/href</sys_name>
+        <sys_package display_value="My Workspace" source="x_194399_my_worksp">389193fbc37f22100770701ed40131e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Workspace">389193fbc37f22100770701ed40131e5</sys_scope>
+        <sys_update_name>sys_ux_client_script_f53f60d1c35032100770701ed4013194</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-29 04:03:58</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

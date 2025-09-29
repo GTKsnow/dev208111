@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_registry_m2m_category">
+    <sys_ux_registry_m2m_category action="INSERT_OR_UPDATE">
+        <experience_category display_value="Workspace">afb4e3e173322010f0ca1e666bf6a726</experience_category>
+        <order>10</order>
+        <page_registry display_value="Incident Workspace">2571e4e8c39432100770701ed40131d9</page_registry>
+        <sys_class_name>sys_ux_registry_m2m_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-26 19:16:20</sys_created_on>
+        <sys_id>4515a0e0c3d432100770701ed4013107</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="My Workspace" source="x_194399_my_worksp">389193fbc37f22100770701ed40131e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Workspace">389193fbc37f22100770701ed40131e5</sys_scope>
+        <sys_update_name>sys_ux_registry_m2m_category_4515a0e0c3d432100770701ed4013107</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-26 19:19:32</sys_updated_on>
+    </sys_ux_registry_m2m_category>
+</record_update>
